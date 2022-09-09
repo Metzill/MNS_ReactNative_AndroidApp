@@ -13,7 +13,6 @@ const CardProduct = ({
     fetch(`https://kitsu.io/api/edge/anime?filter[text]=${anime}`)
             .then(json => json.json())
             .then(resultat => {
-              console.log(resultat.data[0].attributes.posterImage.medium);
               setThumbnail(resultat.data[0].attributes.posterImage.medium);
             });
   }, []);
@@ -50,7 +49,7 @@ const styles = StyleSheet.create({
   },
   imageCard: {
     width: 150,
-    backgroundColor: '#EEE',
+    backgroundColor: '#B4E197',
   },
   contentCard: {
     padding: 5,
@@ -73,7 +72,7 @@ const styles = StyleSheet.create({
     margin: 10,
     height: 200,
     borderRadius: 5,
-    backgroundColor: Colors.white,
+    backgroundColor: "#E9EFC0",
   },
 });
 

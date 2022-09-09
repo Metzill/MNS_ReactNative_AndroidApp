@@ -7,14 +7,12 @@ const EditProfil = ({navigation}) => {
   const [modalVisible, setModalVisible] = useState(false);
 
   return (
-    <View>
+    <View style={{flex: 1,
+      justifyContent: 'center',
+      alignItems: 'center',
+      backgroundColor: '#E9EFC0'}}>
       <Modal animationType="slide" visible={modalVisible} transparent={false}>
         <View style={styles.modal}>
-          <CustomButton
-            style={{marginBottom: 10}}
-            onPress={() => setModalVisible(false)}>
-            Selectionner une photo de votre appareil
-          </CustomButton>
           <CustomButton
             style={{marginBottom: 10}}
             onPress={async () => {
@@ -51,6 +49,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+    backgroundColor: '#B4E197'
   },
 });
 

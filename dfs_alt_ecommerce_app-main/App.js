@@ -25,7 +25,7 @@ const App = () => {
 
   return (
     <SafeAreaProvider>
-      <NavigationContainer>
+      <NavigationContainer style={{color: '#E9EFC0'}}>
         <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
         <Tab.Navigator initialRouteName="Profil">
           <Tab.Screen
@@ -35,16 +35,6 @@ const App = () => {
               tabBarLabel: 'Home',
               tabBarIcon: ({color}) => (
                 <Icon name="home" color={color} size={26} />
-              ),
-            }}
-          />
-          <Tab.Screen
-            name="Cart"
-            component={Cart}
-            options={{
-              tabBarLabel: 'Cart',
-              tabBarIcon: ({color}) => (
-                <Icon name="cart" color={color} size={26} />
               ),
             }}
           />

@@ -33,7 +33,8 @@ const QuoteList = ({navigation}) => {
 
 
   return (
-    <ScrollView contentInsetAdjustmentBehavior="automatic">
+    <ScrollView contentInsetAdjustmentBehavior="automatic"
+    style={{backgroundColor: '#B4E197'}}>
       {listeQuote.map(quote => (
         <TouchableOpacity
           key={quote.id}
